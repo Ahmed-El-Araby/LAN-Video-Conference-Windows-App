@@ -34,17 +34,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ip_txtb = new System.Windows.Forms.TextBox();
             this.port_txtb = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.global_ip_lab = new System.Windows.Forms.Label();
             this.local_ip_lab = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(263, 120);
+            this.button1.Location = new System.Drawing.Point(263, 128);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -54,17 +55,18 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(263, 212);
+            this.button2.Location = new System.Drawing.Point(263, 409);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 0;
             this.button2.Text = "Send";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 123);
+            this.label1.Location = new System.Drawing.Point(27, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 1;
@@ -73,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 153);
+            this.label2.Location = new System.Drawing.Point(27, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
@@ -81,25 +83,17 @@
             // 
             // ip_txtb
             // 
-            this.ip_txtb.Location = new System.Drawing.Point(127, 120);
+            this.ip_txtb.Location = new System.Drawing.Point(127, 128);
             this.ip_txtb.Name = "ip_txtb";
             this.ip_txtb.Size = new System.Drawing.Size(130, 20);
             this.ip_txtb.TabIndex = 2;
             // 
             // port_txtb
             // 
-            this.port_txtb.Location = new System.Drawing.Point(127, 149);
+            this.port_txtb.Location = new System.Drawing.Point(127, 157);
             this.port_txtb.Name = "port_txtb";
             this.port_txtb.Size = new System.Drawing.Size(130, 20);
             this.port_txtb.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(30, 212);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(227, 59);
-            this.textBox3.TabIndex = 3;
             // 
             // label3
             // 
@@ -146,20 +140,37 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(363, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(188, 277);
+            this.listBox1.Size = new System.Drawing.Size(188, 420);
             this.listBox1.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(30, 395);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(227, 37);
+            this.textBox1.TabIndex = 9;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, 243);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(227, 146);
+            this.flowLayoutPanel1.TabIndex = 10;
             // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 299);
+            this.ClientSize = new System.Drawing.Size(563, 441);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.global_ip_lab);
             this.Controls.Add(this.local_ip_lab);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.port_txtb);
             this.Controls.Add(this.ip_txtb);
             this.Controls.Add(this.label2);
@@ -182,11 +193,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ip_txtb;
         private System.Windows.Forms.TextBox port_txtb;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label global_ip_lab;
         private System.Windows.Forms.Label local_ip_lab;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

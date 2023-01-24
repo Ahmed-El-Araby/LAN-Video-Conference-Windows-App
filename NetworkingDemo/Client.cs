@@ -78,7 +78,7 @@ namespace NetworkingDemo
             }
             catch(Exception ex)
             {
-
+                
                 MessageBox.Show(ex.Message);
             }
           
@@ -93,6 +93,16 @@ namespace NetworkingDemo
             }
             return "";
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Add(new Label { 
+                BackColor = Color.BlueViolet,
+                Text = textBox1.Text ,
+                ForeColor=Color.White,
+                Font=new Font("Arial",10,FontStyle.Bold),
+            });
         }
     }
 }
