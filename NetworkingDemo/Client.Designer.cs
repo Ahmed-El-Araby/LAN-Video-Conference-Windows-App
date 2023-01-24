@@ -44,7 +44,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(263, 126);
+            this.button1.Location = new System.Drawing.Point(263, 120);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 129);
+            this.label1.Location = new System.Drawing.Point(27, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 1;
@@ -73,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 159);
+            this.label2.Location = new System.Drawing.Point(27, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
@@ -81,14 +81,14 @@
             // 
             // ip_txtb
             // 
-            this.ip_txtb.Location = new System.Drawing.Point(127, 126);
+            this.ip_txtb.Location = new System.Drawing.Point(127, 120);
             this.ip_txtb.Name = "ip_txtb";
             this.ip_txtb.Size = new System.Drawing.Size(130, 20);
             this.ip_txtb.TabIndex = 2;
             // 
             // port_txtb
             // 
-            this.port_txtb.Location = new System.Drawing.Point(127, 155);
+            this.port_txtb.Location = new System.Drawing.Point(127, 149);
             this.port_txtb.Name = "port_txtb";
             this.port_txtb.Size = new System.Drawing.Size(130, 20);
             this.port_txtb.TabIndex = 2;
@@ -123,6 +123,7 @@
             // 
             this.global_ip_lab.AutoSize = true;
             this.global_ip_lab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.global_ip_lab.ForeColor = System.Drawing.Color.DarkOrange;
             this.global_ip_lab.Location = new System.Drawing.Point(124, 47);
             this.global_ip_lab.Name = "global_ip_lab";
             this.global_ip_lab.Size = new System.Drawing.Size(94, 24);
@@ -133,6 +134,7 @@
             // 
             this.local_ip_lab.AutoSize = true;
             this.local_ip_lab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.local_ip_lab.ForeColor = System.Drawing.Color.DarkOrange;
             this.local_ip_lab.Location = new System.Drawing.Point(124, 17);
             this.local_ip_lab.Name = "local_ip_lab";
             this.local_ip_lab.Size = new System.Drawing.Size(94, 24);

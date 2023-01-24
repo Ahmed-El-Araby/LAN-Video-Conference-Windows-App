@@ -65,12 +65,23 @@ namespace NetworkingDemo
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            TcpClient thisDevice = new TcpClient();
-            NetworkStream OtherDeviceStream;
-            string RecivedData ="";
-            thisDevice.Connect(port_txtb.Text.Trim(), Int32.Parse(ip_txtb.Text));
+            try
+            {
+                 TcpClient thisDevice = new TcpClient();
+                 NetworkStream OtherDeviceStream;
+                 string RecivedData ="";
+                 thisDevice.Connect(ip_txtb.Text, Int32.Parse(port_txtb.Text.Trim()));
 
-           // Thread ctThread = new Thread(GetMessage());
+                // Thread ctThread = new Thread(GetMessage());
+                button1.BackColor = Color.Green;
+                button1.ForeColor = Color.White;
+            }
+            catch(Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+          
 
         }
 
